@@ -7,12 +7,16 @@ const products = [
 ];
 
 function ProductList() {
-  const listItems = products.map((product) => (
-    <li key="product.name">{product.name}</li>
-  ));
+  //   const listItems = products.map((product) => (
+  //     <li key="product.name">{product.name}</li>
+  //   ));
   return (
     <div>
-      <ul className="list-disc list-inside">{listItems}</ul>
+      <ul className="list-disc list-inside">
+        {products.map((product) => (
+          <li key="product.name">{product.name}</li>
+        ))}
+      </ul>
     </div>
   );
 }
