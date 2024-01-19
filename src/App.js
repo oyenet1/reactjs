@@ -8,7 +8,6 @@ import NavBar from "./NavBar";
 function App() {
   let show = false;
   const toggleMe = () => {
-    alert(!show);
     console.log((show = !show));
   };
   return (
