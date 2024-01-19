@@ -6,10 +6,6 @@ import "./index.css";
 import NavBar from "./NavBar";
 
 function App() {
-  let show = false;
-  const toggleMe = () => {
-    console.log((show = !show));
-  };
   return (
     <div className="max-w-5xl mx-auto space-y-4 App">
       <NavBar />
@@ -24,13 +20,7 @@ function App() {
       </section>
       <article>
         <h1 className="py-2 text-2xl">Event Components</h1>
-        <button
-          onClick={toggleMe}
-          className="px-6 py-2 text-sm text-white bg-pink-600 rounded"
-        >
-          Click me
-        </button>
-        {show ? <Click /> : ""}
+        <Click />
       </article>
     </div>
   );
