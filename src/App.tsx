@@ -4,15 +4,16 @@
  * @return {TSX.Element} The main App component
  */
 
-function App() {
+import Hello from "./components/Hello";
 
+function App() {
   return (
     <>
-      <div>
-        <h1 className="text-7xl text-blue-500">Hello world!</h1>
-      </div>
+      <Hello />
+      <h2>Seccond components</h2>
+      <Hello />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
