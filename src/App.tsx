@@ -14,6 +14,7 @@ import Hello from "./components/Hello";
 import NewComp from "./components/NewComp";
 import Destructuring from "./components/Destructuring";
 import User from "./components/User";
+import List from "./components/List";
 
 interface User {
   name: string;
@@ -166,6 +167,9 @@ function App() {
             <User key={i} {...user} />
           ))}
         </div>
+
+        {/* lif of food */}
+        <List />
       </div>
     </>
   );
