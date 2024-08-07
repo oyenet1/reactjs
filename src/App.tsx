@@ -15,6 +15,8 @@ import NewComp from "./components/NewComp";
 import Destructuring from "./components/Destructuring";
 import User from "./components/User";
 import List from "./components/List";
+import Ternary from "./components/Ternary";
+import ConditionalRender from "./components/ConditionalRender";
 
 interface User {
   name: string;
@@ -153,6 +155,7 @@ function App() {
   return (
     <>
       <div className="space-y-4">
+        <ConditionalRender />
         <Hello />
         <h2>Second components</h2>
         {/* new components here */}
@@ -170,6 +173,9 @@ function App() {
 
         {/* lif of food */}
         <List />
+
+        {/* conditional rendering */}
+        <Ternary />
       </div>
     </>
   );
