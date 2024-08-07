@@ -19,6 +19,8 @@ import Ternary from "./components/Ternary";
 import ConditionalRender from "./components/ConditionalRender";
 import Click from "./components/Click";
 import Counter from "./components/Counter";
+import Form from "./components/Form";
+import Login from "./components/Login";
 
 interface User {
   name: string;
@@ -177,7 +179,9 @@ function App() {
 
         <Click />
         <Counter />
-        */}
+        
+        <Form />*/}
+        <Login />
       </div>
     </>
   );
