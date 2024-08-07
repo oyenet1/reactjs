@@ -17,6 +17,8 @@ import User from "./components/User";
 import List from "./components/List";
 import Ternary from "./components/Ternary";
 import ConditionalRender from "./components/ConditionalRender";
+import Click from "./components/Click";
+import Counter from "./components/Counter";
 
 interface User {
   name: string;
@@ -154,16 +156,14 @@ function App() {
   console.log(typeof users);
   return (
     <>
-      <div className="space-y-4">
-        <ConditionalRender />
+      <div className="space-y-4 mx-auto py-16 mt-8 bg-gray-100 max-w-screen-lg p-8 rounded-lg">
+        {/* <ConditionalRender />
         <Hello />
         <h2>Second components</h2>
-        {/* new components here */}
+
         <NewComp {...me} />
         <NewComp name="Bowofade" isTall={true} age={45} />
         <Destructuring name="Adekunle" isTall={false} age={34} />
-
-        {/* new how to list items */}
 
         <div className="w-full gap-8 max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {users.map((user, i) => (
@@ -171,11 +171,13 @@ function App() {
           ))}
         </div>
 
-        {/* lif of food */}
         <List />
 
-        {/* conditional rendering */}
-        <Ternary />
+        <Ternary /> 
+
+        <Click />
+        <Counter />
+        */}
       </div>
     </>
   );
